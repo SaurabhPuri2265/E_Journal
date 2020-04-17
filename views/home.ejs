@@ -1,0 +1,35 @@
+<%- include("partials/header"); -%>
+    <div class="first">
+        <h1 style="color:slategrey;">Welcome
+            <%=displayName%>, Lets create your journal <i class="fa fa-smile-o" style="font-size:48px;color:grey"></i>
+        </h1>
+        <br>
+        <%  homes.forEach(function(home){ %>
+            <p>
+                <i><b><%=home%></b></i>
+            </p>
+            <% }) %>
+
+    </div>
+
+
+    <%  posts.forEach(function(post){ %>
+        <br>
+        <div class="card mb-3" style="width: 100%">
+            <div class="card-body text-dark">
+                <h1 class="card-title">
+                    <%=post.title%>
+                </h1>
+                <b class="card-subtitle text-muted">
+                          <%=post.currDate%>
+                        </b>
+                <p class="card-text">
+                    <%=post.content.substr(0,100)%>
+                </p>
+                <a href="/posts/:<%=post.title%>"><button class="btn btn-info" >Read more..</button></a>
+                <a href="/delete/:<%=post.title%>"><button class="btn btn-danger">Delete</button></a>
+            </div>
+        </div>
+
+        <% }) %>
+            <%- include("partials/footer"); -%>
