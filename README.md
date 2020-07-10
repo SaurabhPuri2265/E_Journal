@@ -1,5 +1,4 @@
-# Just_Journaled
-
+# E_Journal
 **Author - Saurabh Puri**
 
 ```
@@ -12,9 +11,9 @@ Technology Used
 ```
 
 
-**About Just_Journaled**
+**About E_Journal**
 
-Just_Journaled is a step taken to help users maintain a journal for their own. They can evaluate their day spent and
+E_Journal is a step taken to help users maintain a journal for their own. They can evaluate their day spent and
 evaluate it accordingly.
 The project mainly aims towards SAVING PAPER by digitizing the process of journal writing.
 
